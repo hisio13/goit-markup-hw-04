@@ -73,6 +73,7 @@ align-items:center;
 }
 .header-menu-link.active{
     position: relative;
+    color:#404bbf;
 }
 .header-menu-link.active::after {
    position:absolute;
@@ -105,14 +106,13 @@ margin-left:auto;
     align-items:center;
     gap:40px;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-info {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#434455;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-info:hover, .header-contact-info:focus{
     color: #404BBF
@@ -122,7 +122,6 @@ margin-left:auto;
     background-color: #2E2F42;
     padding:188px 0;
     background-image: linear-gradient(
-     to bottom,
      rgba(46, 47, 66, 0.7)
     ,rgba(46, 47, 66, 0.7)
     ),
@@ -132,6 +131,7 @@ margin-left:auto;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    background-size:cover;
 }
 .hero-title{
     font-weight: 700;
@@ -160,6 +160,7 @@ margin-left:auto;
         margin:auto;
         display:block;
         border:none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover, .title-btn:focus{
     background-color: #404BBF
@@ -198,6 +199,7 @@ display:flex;
         margin-bottom: 8px;
         justify-content: center;
         display: flex;
+        align-items: center;
 }
 .features-icon{
    margin-top: 24px;
@@ -245,8 +247,10 @@ padding:120px 0;
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    width: calc((264 - 3*24px)/4)
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((264 - 3*24px)/4);
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
 .team-img {
@@ -294,11 +298,11 @@ margin-bottom: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-contacts-icon {
-    fill:white;
+    fill:#f4f4fd;
 }
 .team-contacts-link:hover ,.team-contacts-link:focus{
     background-color: #404bbf;
@@ -328,7 +332,7 @@ row-gap:48px;
 }
 .portfolio-item{
 flex-basis:calc((100 - 3*24px)/6);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover .banking-app-cover-text{
     transform:translateY(0);
@@ -357,11 +361,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width:100%;
         left:0;
         height:100%;
-        padding-top: 40px;
-        padding-right: 32px;
-        padding-left: 32px;
         transform: translateY(100%);
         transition: transform 300ms;
+        padding: 40px 32px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-info-container{
 padding:32px 16px;
@@ -391,10 +394,11 @@ border-top:none;
 .container-footer{
     display: flex;
 gap:120px;
+align-items: baseline;
 
 }
 .footer-paragraph{
-
+margin-right: 120px;
 }
 .footer-logo {
     font-family:"Raleway",sans-serif;
@@ -435,4 +439,10 @@ color:#F4F4FD
 }
 .footer-contacts-link:hover ,.footer-contacts-link:focus{
     background-color: #31D0AA;
+}
+.footer-contacts-list{
+    gap:16px;
+}
+.footer-contacts-icon{
+    fill:#F4F4FD;
 }

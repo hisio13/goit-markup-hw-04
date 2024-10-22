@@ -278,8 +278,6 @@ padding:120px 0;
     display:flex;
 gap: 24px;
 justify-content: center;
-margin-top: 8px;
-margin-bottom: 32px;
 }
 
 .team-contacts-item {
@@ -380,7 +378,6 @@ border-top:none;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
         margin-top: 8px;
 }
 .footer {
@@ -389,7 +386,6 @@ border-top:none;
 }
 .container-footer{
     display: flex;
-gap:120px;
 align-items: baseline;
 
 }
